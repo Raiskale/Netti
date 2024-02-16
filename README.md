@@ -1,50 +1,61 @@
-# Hydrogen template: Skeleton
+# ⚠️ This template is deprecated. Please use [the new template](https://github.com/netlify/hydrogen-template)
 
-Hydrogen is Shopify’s stack for headless commerce. Hydrogen is designed to dovetail with [Remix](https://remix.run/), Shopify’s full stack web framework. This template contains a **minimal setup** of components, queries and tooling to get started with Hydrogen.
+[Hydrogen](https://shopify.dev/custom-storefronts/hydrogen) is a React framework and Software Development Kit (SDK) that can be used to build fast and dynamic custom Shopify storefronts.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/hydrogen-template#SESSION_SECRET=mock%20token&PUBLIC_STORE_DOMAIN=mock.shop)
-
-- [Check out Hydrogen docs](https://shopify.dev/custom-storefronts/hydrogen)
-- [Get familiar with Remix](https://remix.run/docs/)
-
-## What's included
-
-- Remix 2
-- Hydrogen
-- Shopify CLI
-- ESLint
-- Prettier
-- GraphQL generator
-- TypeScript and JavaScript flavors
-- Minimal setup of components and routes
+This template will show you how to create a sample custom storefront that can be hosted on Netlify.
 
 ## Getting started
 
 **Requirements:**
 
-- Node.js version 18.0.0 or higher
-- Netlify CLI 17.0.0 or higher
+- [Node.js](https://nodejs.org/en/) version 16.5.0 or higher
 
-```bash
-npm install -g netlify-cli@latest
-```
+### Running the dev server locally
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/hydrogen-template#SESSION_SECRET=mock%20token&PUBLIC_STORE_DOMAIN=mock.shop)
+1. Clone the repositoritory to your computer:
+    ```bash
+    git clone https://github.com/netlify/hydrogen-netlify-starter
+    ```
 
-To create a new project, either click the "Deploy to Netlify" button above, or run the following command:
+2. Navigate to the repostitory folder:
+    ```bash
+    cd hydrogen-netlify-starter
+    ```
 
-```bash
-npx create-remix@latest --template=netlify/hydrogen-template
-```
+3. Update [`hydrogen.config.js`](hydrogen.config.js) with your shop's domain (replace the `storeDomain` sample value) and [Storefront API token](https://shopify.dev/api/examples/storefront-api#step-2-generate-a-storefront-api-access-token) (replace the `storefrontToken` sample value).
 
-## Local development
+4. Install the package dependencies:
+    ```bash
+    npm install
+    ```
 
-```bash
-npm run dev
-```
+5. Start the application:
+    ```bash
+    npm run dev
+    ```
 
-## Building for production
+### Building for production
+
+To build a production-ready instance of the application, run the following command:
 
 ```bash
 npm run build
 ```
+
+### Previewing a production build
+
+To run a local preview of your Hydrogen app in an environment similar to Netlify:
+
+1. Build your Hydrogen app:
+    ```bash
+    npm run build
+    ```
+
+2. Run the preview command:
+    ```bash
+    npm run preview
+    ```
+
+## Questions and troubleshooting
+
+If you found an issue with the code [in this repository](https://github.com/netlify/hydrogen-netlify-starter/), feel free to open an issue or let us know [in the Netlify Forums](https://answers.netlify.com/).
