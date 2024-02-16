@@ -1,11 +1,8 @@
-node_modules
-/.cache
-/build
-/dist
-/public/build
-/.mf
-.env
-.shopify
+# Add specific files you want to track
+git add README.md package.json ...
 
-# Local Netlify folder
-.netlify
+# Commit the changes
+git commit -m "Your commit message"
+
+# Push to GitHub
+git push origin master
