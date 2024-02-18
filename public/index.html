@@ -1,52 +1,82 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raiskale.com</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    /* CSS for the header */
-    header {
-      background: linear-gradient(to right, rgb(37, 113, 255), rgb(43, 12, 70)); /* Gradient background for the header */
-      color: white; /* Text color */
-      padding: 6px 50px; /* Padding to create space around content */
-      text-align: left; /* Center-align text */
-      border: none; /* Remove the default border */
-      box-shadow: 0px 0px 0px 2px rgb(226, 226, 226); /* Add a box shadow for the border */
-    }
-    
-    
-    /* CSS for the header text */
-    header h1 {
-      font-family: Arial, sans-serif; /* Change the font family */
-      color: white; /* Text color */
-      background: linear-gradient(to right, #333, #666666); /* Gradient background for the header text */
-      -webkit-background-clip: text; /* Clip text to the background */
-      background-clip: text; /* Clip text to the background */
-      
-    }
-    header p {
-      font-family: 'Arial', sans-serif; /* Change the font family for p */
-      color: white; /* Text color */
-      margin-left: 20px; /* Adjust margin to align with h1 */
+    /* Reset styles */
+    body, h1, p {
+      margin: 0;
+      padding: 0;
     }
 
-    /* CSS for the body */
+    /* Header styles */
+    header {
+      background: linear-gradient(to right, rgb(37, 113, 255), rgb(43, 12, 70));
+      color: white;
+      padding: 20px 50px;
+      text-align: left;
+      position: relative; /* Positioning for the pseudo-element */
+    }
+
+    /* Header text styles */
+    header h1 {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #333, #666);
+      -webkit-background-clip: text;
+      background-clip: text;
+      margin-left: 4px;
+      font-size: 24px;
+    }
+
+    /* Header paragraph styles */
+    header p {
+      font-family: Arial, sans-serif;
+      color: white;
+      margin-left: 5px;
+    }
+
+    /* Top frame styles */
+    header::before {
+      content: '';
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px; /* Adjust thickness of the frame */
+      background: linear-gradient(to right, rgb(23, 58, 255), rgb(10, 10, 10)); /* Frame color */
+      border-radius: 10px; /* Adjust border radius to make corners smoother */
+      z-index: -1; /* Behind the header content */
+    }
+
+    /* Body styles */
     body {
-      background: linear-gradient(to right, rgb(9, 146, 215), rgb(49, 10, 83)); /* Gradient background for the body */
-      color: white; /* Text color */
+      background: linear-gradient(to right, rgb(9, 146, 215), rgb(49, 10, 83));
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Content under the header */
+    .content {
+      padding: 20px;
+      text-align: left; /* Align content to the left */
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Raiskale.com</h1>
-    <p>Made by Nailo</p>
+    <p></p>
   </header>
-
-  <!-- Main content of the page goes here -->
+  <div class="content">
+    <p>The content will  be added soon.</p>
+  </div>
 </body>
+<p></p>
+  <!-- Main content of the page goes here -->
+
+</body>
+
 </html>
