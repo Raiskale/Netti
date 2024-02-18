@@ -2,6 +2,16 @@
     font-family: 'Porky' ;
     src: url(fonts/PORKYS_.TTF  );
 }
-p {
+h1 {
     color: red; /* This sets the text color to red */
 }
+header h1 {
+    color: red; /* Change the color of the big text */
+  }
+  header {
+    background-color: #333; /* Background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding to create space around content */
+    text-align: center; /* Center-align text */
+    border: 2px solid white; /* Add a border around the header */
+  }
